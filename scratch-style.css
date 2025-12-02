@@ -1,0 +1,162 @@
+/* This is your custom stylesheet, built from scratch */
+
+body {
+    /* Requirement: Custom background color */
+    background-color: #2c3e50;
+    /* A dark slate blue */
+
+    /* Requirement: Font family */
+    font-family: 'Verdana', sans-serif;
+
+    /* Requirement: Font color */
+    color: #ecf0f1;
+    /* A light, off-white */
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Requirement: At least three DIVs for positioning */
+
+/* Style Definition 1: .header-container */
+.header-container {
+    background-color: #e74c3c;
+    /* A strong red */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 5px solid #c0392b;
+    /* A darker red */
+}
+
+/* Style Definition 2: .content-container */
+.content-container {
+    max-width: 900px;
+    margin: 30px auto;
+    /* Centers the content */
+    padding: 25px;
+    background-color: #34495e;
+    /* A slightly lighter dark blue */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style Definition 3: .image-gallery */
+.image-gallery {
+    display: flex;
+    /* Uses flexbox to line up images */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-gallery img {
+    width: 30%;
+    min-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid #e74c3c;
+    margin: 5px;
+}
+
+/* Style Definition 4: h1 and h2 headings */
+h1,
+h2 {
+    /* Requirement: Another font family */
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+/* Style Definition 5: Nested list styling */
+ol {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+ul {
+    font-size: 1rem;
+    color: #bdc3c7;
+    /* A lighter gray for sub-items */
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* Style Definition 6: Video wrapper for responsive video */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 20px 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style Definition 7: Link styling */
+.nav-link {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #c0392b;
+}
+
+.special-link {
+    background-color: #f1c40f;
+    /* Yellow */
+    color: #333;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.special-link:hover {
+    background-color: #f39c12;
+}
+
+/* Back button */
+.back-to-pro-site {
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #9b59b6;
+    /* Purple */
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-to-pro-site:hover {
+    background-color: #8e44ad;
+}

@@ -1,0 +1,74 @@
+/* Main stylesheet for professional pages */
+
+body {
+    background-color: #f8f9fa;
+    /* A light gray background */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.d-flex {
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 280px;
+    background-color: #343a40;
+    /* Dark background for sidebar */
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-sticky {
+    padding: 1rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #6c757d;
+}
+
+.nav-link {
+    color: #adb5bd;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 5px 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff;
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 280px;
+    /* Same as sidebar width */
+    width: calc(100% - 280px);
+    background-color: #ffffff;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
